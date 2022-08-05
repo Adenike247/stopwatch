@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartwatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <h1>amazon</h1>
+            </div>
+        </div>
+
+    </section>
+    <!--End Header Section -->
+    <!-- front part -->
+    <div class="front">
+        <div class="btn"></div>
+        
+        <div class="glass"></div>
+        <!-- stopwatch -->
+
+        <div class="stopwatch">
+            <span id="count">00</span>
+            <br>
+            <br>
+
+            <!-- count |hour | min | sec -->
+
+            <span id="hr" class="number">00</span><span class="txt">hr</span>
+            <span id="min" class="number">00</span><span class="txt">min</span>
+            <span id="sec" class="number">00</span><span class="txt">sec</span>
+
+            <br>
+            <br>
+            <!-- pause.start,reset button -->
+            <i class="fa fa-pause" onclick="stop()" id="pause"></i>
+            <i class="fa fa-play" onclick="start()" id="start"></i> 
+            <i class="fa fa-repeat" onclick="reset()" ></i>
+
+
+        </div>
+
+        <!-- stopwatch -->
+
+    </div>
+    <div class="back"></div>
+    <div class="belt"></div>
+
+    <!-- End front part -->
+
+    <!--Service section  -->
+    <section id="service">
+        <div class="service">
+            <div class="service-top">
+                <h1>FitBit 19 - The Smartest Watch</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adpisicing elit. Ipsum
+                    deleniti nsiores pariatur assumenda quas magni et, doloribus quod.
+
+                </p>
+                <div class="select">
+                    <h3>Select Color</h3>
+
+                </div>
+                <div class="theme-buttons-container"  >
+                    <span class="theme-buttons" style="background: black;"></span>
+                    <span class="theme-buttons" style="background:#ff4757;"></span>
+                    <span class="theme-buttons" style="background:#6a5acd;"></span>
+                    <span class="theme-buttons" style="background:#8F6251;"></span>
+
+                </div>
+                <div class="select">
+                    <h3>Features</h3>
+
+                </div>
+                <div class="button-container">
+                    <button class="btn-1">Time</button>
+                    <button id="btn-1" class="btn-1">Heart Rate</button>
+
+                </div>
+                <div>
+                    <button class="btn-2">BUY NOW</button>
+
+                </div>
+
+    </section>
+    <!--End Service section  -->
+    <script src="index.js"></script>
+</body>
+
+</html>
