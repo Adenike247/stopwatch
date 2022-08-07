@@ -19,6 +19,7 @@ function stop(){
     temp=false;
     document.getElementById('pause').style.display="none";
     document.getElementById('start').style.display="block";
+
 }
 // reserbtn
 function reset(){
@@ -40,6 +41,18 @@ function reset(){
         document.getElementById('hr').innerHTML=hr;
         document.getElementById('pause').style.display="none";
         document.getElementById('start').style.display="block";
+      //   document.getElementById('heart').style.display="none";
+
+}
+
+function heartrate() {
+   document.getElementById('time-wrapper').style.display="none";
+   document.getElementById('heart').style.display="block";
+}
+
+function time() {
+   document.getElementById('time-wrapper').style.display="block";
+   document.getElementById('heart').style.display="none";
 }
 
 // main stopwatch fuction
@@ -121,16 +134,55 @@ function stopwatch(){
 
 }
 
-document.getElementById('dark').style.display="none";
 
-document.querySelector('.belt').onclick = () =>{
-    let themeButtons = document.querySelectorAll('.theme-buttons');
+// this is use to switch the color of the belt
 
-    themeButtons.forEach(color =>{
-        color.addEventListener('click', () =>{
-        let dataColor = color.getAttribute('data-color');
-        document.querySelectorAll('.theme-buttons').style.setProperty('#000',dataColor)
-        });
-    });
-}
+const colors = [ "black", "#ff4757", "#6a5acd" ,"#8F6251" ];
+
+const firstBtn = document.getElementById("black");
+const secondBtn = document.getElementById("crimson");
+const thirdBtn = document.getElementById("purple");
+const fourthBtn = document.getElementById("brown");
+const fifthBtn = document.getElementById("btn-1");
+
+
+
+const belt = document.querySelector('#belt')
+
+firstBtn.addEventListener('click', function(){
+   const randomNumber = 0;
+   belt.style.backgroundColor = colors[randomNumber];
+});
+secondBtn.addEventListener('click', function(){
+   const randomNumber = 1;
+   belt.style.backgroundColor = colors[randomNumber];
+});
+thirdBtn.addEventListener('click', function(){
+   const randomNumber = 2;
+   belt.style.backgroundColor = colors[randomNumber];
+});
+fourthBtn.addEventListener('click', function(){
+   const randomNumber = 3;
+   belt.style.backgroundColor = colors[randomNumber];
+});
+// fifthBtn.addEventListener('click', function(){
+//    const randomNumber = 1;
+//    front.style.backgroundColor = colors[randomNumber];
+// });
+
+
+
+
+// const fifthBtn = document.getElementById("btn-1");
+
+
+
+
+
+// fifthBtn.addEventListener('click', function(){
+//    const randomNumber = 0;
+//    front.style.backgroundColor = colors[randomNumber];
+// });
+
+
 
